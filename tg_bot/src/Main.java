@@ -1,17 +1,27 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
 public class Main {
+
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        ArrayList<Integer> integers = new ArrayList<Integer>();
+        integers.add(50);
+        integers.add(39);
+        integers.add(1);
+        integers.add(24);
+        integers.add(66);
+        integers.add(23);
+        integers.add(15);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Collections.sort(integers);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+
+        for (Integer i: integers) {
+            System.out.println(i);
         }
+
+        }
+
+
     }
-}
